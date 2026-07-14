@@ -1,0 +1,24 @@
+html, body { margin: 0; min-height: 100%; background: #0d0e12; color: #ece7e1; font-family: -apple-system, system-ui, sans-serif; touch-action: none; }
+#app { max-width: 420px; margin: 0 auto; padding: 24px 16px 60px; text-align: center; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: #c9525a; font-weight: 700; }
+h1 { font-size: 30px; margin: 6px 0 2px; }
+.sub { color: #9a9199; font-size: 14px; margin-bottom: 14px; }
+.stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
+.stat { background: #16151b; border-radius: 10px; padding: 10px 14px; flex: 1; }
+.stat .num { font-size: 20px; font-weight: 800; }
+.stat .label { font-size: 11px; color: #9a9199; text-transform: uppercase; }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; background: #1a1920; border-radius: 12px; padding: 8px; }
+.cell { aspect-ratio: 1; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22px; background: #221f28; }
+.cell[data-v="2"] { background: #2c2a33; }
+.cell[data-v="4"] { background: #35313d; }
+.cell[data-v="8"] { background: #c9525a; color: #fff; }
+.cell[data-v="16"] { background: #d8724a; color: #fff; }
+.cell[data-v="32"] { background: #e08a3e; color: #fff; }
+.cell[data-v="64"] { background: #e0a53e; color: #fff; }
+.cell[data-v="128"], .cell[data-v="256"], .cell[data-v="512"] { background: #d8b34a; color: #0d0e12; font-size: 18px; }
+.cell[data-v="1024"], .cell[data-v="2048"] { background: #5bc0a8; color: #0d0e12; font-size: 16px; }
+
+.overlay { margin-top: 16px; background: #16151b; border: 1px solid #2a2831; border-radius: 12px; padding: 18px; }
+.btn { background: #c9525a; color: #fff; border: none; border-radius: 10px; padding: 12px 24px; font-weight: 700; cursor: pointer; margin-top: 10px; }
+.hint { font-size: 13px; color: #6b6670; margin-top: 14px; }
